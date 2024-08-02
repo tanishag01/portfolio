@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js" defer></script> <!-- Link to the external JavaScript file -->
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <a href="#" class="logo">Tanish</a>
+      <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- Content Sections -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h2>Hello, Welcome to my portfolio!</h2>
+        <h1>I'm Tanish Agrawal</h1>
+        <p>
+          I am a final-year Information Technology undergraduate at Galgotias
+          College of Engineering and Technology. Skilled in Java and well-versed
+          in data structures and algorithms. I am passionate about improving my
+          coding skills and developing applications and websites. Explore my
+          journey, from my academic achievements to the various projects I've
+          worked on. Thank you for visiting!
+        </p>
+        <a href="https://drive.google.com/file/d/1fc0tTqqWOY8mhblPvCvVkkW24aiO2VH3/view?usp=sharing" class="resume-link" target="_blank"
+          >Download Resume</a
+        >
+      </div>
+      <div class="home-photo">
+        <img src="img/about1.png" alt="Tanish" />
+      </div>
+    </section>
+
+	<!-- Skill Section -->
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <img src="img/skills/java.png" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/skills/c.png" alt="C" />
+          <p>C</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/skills/html.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/skills/css.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/skills/js.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+		<div class="skill-item">
+			<img src="img/skills/git.png" alt="GitHub" />
+			<p>GitHub</p>
+		  </div>
+      </div>
+    </section>
+
+	<!-- Project Section -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-item">
+          <img src="img/project1.jpg" alt="Project 1" />
+          <h3>Joboard</h3>
+          <!-- <h4>Developed a user-friendly job portal.</h4> -->
+          <div class="tech-box">
+            <div class="tech-list">
+              <div class="tech-item">React</div>
+              <div class="tech-item">HTML</div>
+              <div class="tech-item">CSS</div>
+              <div class="tech-item">Firebase</div>
+            </div>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://tanishag01.github.io/online-job-portal/"
+              class="view-link"
+              target="_blank"
+              aria-label="View Project 1"
+            >
+            <i class="fa-solid fa-eye"></i>View
+            </a>
+            <a
+              href="https://github.com/tanishag01/online-job-portal"
+              class="code-link"
+              target="_blank"
+              aria-label="View Code for Project 1"
+            >
+            <i class="fas fa-code"></i> Code
+            </a>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="img/project2.jpg" alt="Project 2" />
+          <h3>SpendScope</h3>
+          <!-- <h4>Developed an expense management tool.</h4> -->
+          <div class="tech-box">
+            <div class="tech-list">
+              <div class="tech-item">React</div>
+              <div class="tech-item">HTML</div>
+              <div class="tech-item">CSS</div>
+              <div class="tech-item">Material-UI</div>
+            </div>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://tanishag01.github.io/expense-tracker/"
+              class="view-link"
+              target="_blank"
+              aria-label="View Project 2"
+            >
+            <i class="fa-solid fa-eye"></i> View
+            </a>
+            <a
+              href="https://github.com/tanishag01/expense-tracker"
+              class="code-link"
+              target="_blank"
+              aria-label="View Code for Project 2"
+            >
+            <i class="fas fa-code"></i> Code
+            </a>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="img/project3.jpg" alt="Project 3" />
+          <h3>PassEase</h3>
+          <!-- <h4>Developed a secure password manager.</h4> -->
+          <div class="tech-box">
+            <div class="tech-list">
+              <div class="tech-item">HTML</div>
+              <div class="tech-item">CSS</div>
+              <div class="tech-item">JavaScript</div>
+            </div>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://tanishag01.github.io/password-manager/"
+              class="view-link"
+              target="_blank"
+              aria-label="View Project 3"
+            >
+            <i class="fa-solid fa-eye"></i>View
+            </a>
+            <a
+              href="https://github.com/tanishag01/password-manager"
+              class="code-link"
+              target="_blank"
+              aria-label="View Code for Project 3"
+            >
+            <i class="fas fa-code"></i>Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<!-- Contact Section -->
+	<section class="contact" id="contact">
+        <div class="contact-content">
+            <div class="contact-text">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions or just want to get in touch, feel free to drop me a message below.</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+	<!-- Social Links Section -->
+<section class="social-links">
+	<a href="https://www.linkedin.com/in/tanishagrawal01" target="_blank" aria-label="LinkedIn">
+	  <i class="bx bxl-linkedin"></i>
+	</a>
+	<a href="https://github.com/tanishag01" target="_blank" aria-label="GitHub">
+	  <i class="bx bxl-github"></i>
+	</a>
+	<a href="mailto:tanishagrawal5103@gmail.com" aria-label="Email">
+	  <i class="bx bx-envelope"></i>
+	</a>
+  </section>
+  
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-rights">
+        Copyright ©Tanish Agrawal | All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
